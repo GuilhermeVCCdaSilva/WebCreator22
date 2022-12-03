@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebCreator 19 e 26 Novembro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="header">
+<img src="images/weblogo.png">
+<h1>WebCreator</h1>
+</div>
+<h2>WebCreator 19 e 26 Novembro</h2>
+<h2>Dependencies</h2>
+<h2 class="code-line" data-line-start=1 data-line-end=3 ><a id="Dependencies_1"></a>Dependencies</h2>
+<ul>
+<li class="has-line-data" data-line-start="4" data-line-end="5"><a href="https://code.visualstudio.com/download">Visual Studio Code (VsCode)</a></li>
+<li class="has-line-data" data-line-start="5" data-line-end="6">Google Chorme or other web browser</li>
+<li class="has-line-data" data-line-start="6" data-line-end="7"><a href="https://www.bootstrapcdn.com/">Bootstrap CDN</a></li>
+</ul>
+<h2 class="code-line" data-line-start=9 data-line-end=11 ><a id="First_approach_to_Bootstrap_9"></a>&gt;First approach to Bootstrap</h2>
+<h3 class="code-line" data-line-start=12 data-line-end=13 ><a id="What_is_Bootstrap_12"></a>What is Bootstrap</h3>
+<p class="has-line-data" data-line-start="14" data-line-end="16">Bootstrap is a free, open source front-end development framework for the creation of websites and web apps.<br>
+Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.</p>
+<p class="has-line-data" data-line-start="17" data-line-end="18">As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system.</p>
+<p class="has-line-data" data-line-start="19" data-line-end="20">The Bootstrap framework is built on Hypertext Markup Language (HTML), cascading style sheets (CSS) and JavaScript. Web developers using Bootstrap can build websites much faster without spending time worrying about basic commands and functions.</p>
+<p class="has-line-data" data-line-start="21" data-line-end="22">Create a new index.html file in your project root.</p>
+<p class="has-line-data" data-line-start="23" data-line-end="24">Include the <em>&lt;meta name=“viewport”&gt;</em> tag as well for proper responsive behavior in mobile devices.</p>
+<h4 class="code-line" data-line-start=25 data-line-end=26 ><a id="Exemple_25"></a>Exemple:</h4>
+<pre><code>    &lt;!doctype html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;title&gt;Bootstrap demo&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<p class="has-line-data" data-line-start="39" data-line-end="40">Include Bootstrap’s CSS and JS. Place the <em>&lt;link&gt;</em> tag in the <em>&lt;head&gt;</em> for our CSS, and the <em>&lt;script&gt;</em> tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing <em>&lt;/body&gt;</em>.</p>
+<h4 class="code-line" data-line-start=41 data-line-end=42 ><a id="Exemple_41"></a>Exemple:</h4>
+<pre><code>   &lt;!doctype html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;title&gt;Bootstrap demo&lt;/title&gt;
+        
+        &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65&quot; crossorigin=&quot;anonymous&quot;&gt;
+        
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+        
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<h3 class="code-line" data-line-start=61 data-line-end=62 ><a id="Just_copy_61"></a>Just “copy”:</h3>
+<p class="has-line-data" data-line-start="63" data-line-end="64">Now that you have done all the Boostrap configuration you can have fun and “copy” all the Boostrap examples that you like.</p>
+<p class="has-line-data" data-line-start="65" data-line-end="66">I will give you some examples:</p>
+<h4 class="code-line" data-line-start=67 data-line-end=68 ><a id="Cards_67"></a>Cards:</h4>
+<p class="has-line-data" data-line-start="68" data-line-end="69">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+<p class="has-line-data" data-line-start="70" data-line-end="71">Get the link  <a href="https://getbootstrap.com/docs/4.0/components/card/">here</a></p>
+<h4 class="code-line" data-line-start=72 data-line-end=73 ><a id="Carousel_72"></a>Carousel:</h4>
+<p class="has-line-data" data-line-start="73" data-line-end="74">The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</p>
+<p class="has-line-data" data-line-start="75" data-line-end="76">Get the link  <a href="https://getbootstrap.com/docs/5.1/components/carousel/">here</a></p>
+<h4 class="code-line" data-line-start=77 data-line-end=78 ><a id="Footer_77"></a>Footer:</h4>
+<p class="has-line-data" data-line-start="78" data-line-end="79">A footer is other additional navigation component. It can hold links, buttons, company info, copyrights, forms, and many other elements.</p>
+<p class="has-line-data" data-line-start="80" data-line-end="81">Get the link <a href="https://mdbootstrap.com/docs/standard/navigation/footer/">here</a></p>
+<h2 class="code-line" data-line-start=82 data-line-end=83 ><a id="Bootstrap_Fundamentals_82"></a>Bootstrap Fundamentals</h2>
+<h3 class="code-line" data-line-start=84 data-line-end=85 ><a id="Breakpoints_84"></a>Breakpoints</h3>
+<p class="has-line-data" data-line-start="86" data-line-end="87">Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.</p>
+<p class="has-line-data" data-line-start="88" data-line-end="89">Bootstrap includes six default breakpoints:</p>
+<p class="has-line-data" data-line-start="90" data-line-end="95">:: Small    <strong>sm</strong>  ≥576px<br>
+:: Medium   <strong>md</strong>  ≥768px<br>
+:: Large    <strong>lg</strong>  ≥992px<br>
+:: Extra large  <strong>xl</strong>  ≥1200px<br>
+:: Extra extra large  <strong>xxl</strong>   ≥1400px</p>
+<h3 class="code-line" data-line-start=96 data-line-end=97 ><a id="Containers_96"></a>Containers</h3>
+<p class="has-line-data" data-line-start="98" data-line-end="99">Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.</p>
+<p class="has-line-data" data-line-start="100" data-line-end="101">Below illustrates how each container’s max-width compares to the original <em>.container</em> and <em>.container-fluid</em> across each breakpoint.</p>
+<p class="has-line-data" data-line-start="102" data-line-end="103"><strong>.container</strong> &lt; 576px</p>
+<p class="has-line-data" data-line-start="104" data-line-end="105"><strong>.container-sm</strong> ≥576px</p>
+<p class="has-line-data" data-line-start="106" data-line-end="107"><strong>.container-md</strong> ≥768px</p>
+<p class="has-line-data" data-line-start="108" data-line-end="109"><strong>.container-lg</strong> ≥992px</p>
+<p class="has-line-data" data-line-start="110" data-line-end="111"><strong>.container-xl</strong>  ≥1200px</p>
+<p class="has-line-data" data-line-start="112" data-line-end="113"><strong>.container-xxl</strong>  ≥1400px</p>
+<pre><code>&lt;div class=&quot;container-sm&quot;&gt;100% wide until small breakpoint&lt;/div&gt;
+&lt;div class=&quot;container-md&quot;&gt;100% wide until medium breakpoint&lt;/div&gt;
+&lt;div class=&quot;container-lg&quot;&gt;100% wide until large breakpoint&lt;/div&gt;
+&lt;div class=&quot;container-xl&quot;&gt;100% wide until extra large breakpoint&lt;/div&gt;
+&lt;div class=&quot;container-xxl&quot;&gt;100% wide until extra extra large breakpoint&lt;/div&gt;
+</code></pre>
+<h4 class="code-line" data-line-start=120 data-line-end=121 ><a id="Fluid_containers_120"></a>Fluid containers</h4>
+<p class="has-line-data" data-line-start="122" data-line-end="123">Use <em>.container-fluid</em> for a full width container, spanning the entire width of the viewport.</p>
+<pre><code>&lt;div class=&quot;container-fluid&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<h3 class="code-line" data-line-start=128 data-line-end=129 ><a id="Grid_system_128"></a>Grid system</h3>
+<p class="has-line-data" data-line-start="129" data-line-end="130">Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.</p>
+<h4 class="code-line" data-line-start=131 data-line-end=132 ><a id="Exemple_131"></a>Exemple:</h4>
+<img src="./images/BootrapGird.png" alt="BootrapGird">
+<pre><code>    &lt;div class=&quot;container text-center&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          Column
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          Column
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          Column
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<p class="has-line-data" data-line-start="149" data-line-end="150">Get the original doc <a href="https://getbootstrap.com/docs/5.2/layout/grid/">here</a></p>
+<br>
+<p class="has-line-data" data-line-start="151" data-line-end="152">You can start from this <a href="./downloads/WebCreator19e26.zip">exemple</a></p>

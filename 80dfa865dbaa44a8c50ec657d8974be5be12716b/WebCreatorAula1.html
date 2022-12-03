@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebCreator 15 Outubro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="header">
+<img src="images/weblogo.png" alt="weblogo">
+<h1>WebCreator</h1>
+</div>
+<h2>Aula 15 Outubro</h2>
+<h2>Dependencies</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/download">Visual Studio Code (VsCode)</a></li>
+<li>Google Chorme or other web browser<br>
+The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read <code>.HTML</code> documents and display them correctly.<br>
+A browser does not display the HTML tags, but uses them to determine how to display the document</li>
+</ul>
+<h2>>Introduction to HTML</h2>
+<p>HTML was created by Sir Tim Berners-Lee in late 1991 but was not officially released. It was published in 1995 as HTML 2.0. HTML 4.01 was published in late 1999 and was a major version of HTML.</p>
+<p>The <a href="http://info.cern.ch/">first web page</a>  went live on August 6, 1991. It was dedicated to information on the World Wide Web project and was made by Tim Berners-Lee.</p>
+<p>The <code> &lt;!DOCTYPE&gt;</code> declaration represents the document type</p>
+<p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags<br>
+<code>&lt;h1&gt;</code> defines the most important heading.<br>
+<code>&lt;h6&gt;</code> defines the least important heading</p>
+<p>HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag</p>
+<p >:: HTML links are defined with the <code>&lt;a&gt;</code> tag</p>
+<pre><code>&lt;a href=&quot;https://www.google.pt&quot;&gt;This is a link&lt;/a&gt;
+</code></pre>
+<p>:: HTML images are defined with the <code>&lt;img&gt;</code> tag.<br>
+The source file (src), alternative text (alt), width, and height are provided as attribute</p>
+<pre><code>&lt;img src=&quot;image.jpg&quot; alt=&quot;just a image&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
+</code></pre>
+<p>HTML elements can be nested (this means that elements can contain other elements).</p>
+<h3>All HTML documents consist of nested HTML elements.</h3>
+<p><code>&lt;p&gt;</code>This is a <code>&lt;br&gt;</code> paragraph with a <code>&lt;b&gt;</code>bold line break.<code>&lt;/b&gt;&lt;/p&gt;</code></p>
+<pre><code>- &lt;br&gt; Line break
+- &lt;ol&gt; Defines an ordered list
+- &lt;li&gt; Defines a list item
+- &lt;b&gt; - Bold text
+- &lt;strong&gt; - Important text
+- &lt;i&gt; - Italic text
+- &lt;em&gt; - Emphasized text
+- &lt;mark&gt; - Marked text
+- &lt;small&gt; - Smaller text
+- &lt;del&gt; - Deleted text
+- &lt;ins&gt; - Inserted text
+- &lt;sub&gt; - Subscript text
+- &lt;sup&gt; - Superscript text
+</code></pre>
+<h2></a>Light Introduction to CSS { }</h2>
+<p>CSS stands for Cascading Style Sheets<br>
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br>
+CSS saves a lot of work. It can control the layout of multiple web pages all at oncey:</p>
+<br>
+<p><img src="images/CssSyntax.PNG" alt="CssSyntax"></p>
+<br>
+<p>:: In this example all <code>&lt;p&gt;</code> elements will be center-aligned, with a red text color:</p>
+<pre><code>p {
+color: red;
+text-align: center;
+}
+</code></pre>
+<p>:: Import fonts from <a href="https://fonts.google.com/">Google Fonts</a> like this:</p>
+<pre><code>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap');
+p{
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+</code></pre>
+<p">:: The background-color <strong>property</strong> specifies the background color of an element.</p>
+<p>The background color of a page is set like this:</p>
+<pre><code>body {
+background-color: lightblue;
+}
+</code></pre>
+<p>With an external style sheet, you can change the look of an entire website by changing just one file!<br>
+Each HTML page must include a reference to the external style sheet file inside the <code>&lt;link&gt;</code> element, inside the head section.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<br>
+<p>You can download <a href=downloads/WebCreator15Outubro.rar>here</a> an exemple .html and .css</p>
+</body>
+</html>

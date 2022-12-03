@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebCreator 22 Outubro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="header">
+<img src="images/weblogo.png">
+<h1>WebCreator</h1>
+</div>
+<h2>Aula 22 Outubro</h2>
+<h2>Dependencies</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">Windows Subsytem Linux (WSL)</a></li>
+<li><a href="https://git-scm.com/">Git</a></li>
+<li><a href="https://code.visualstudio.com/download">Visual Studio Code (VsCode)</a></li>
+<li>Google Chorme or other web browser</li>
+</ul>
+<h2><a id="Introduction_to_Git_and_Linux_13"></a>>Introduction to Git and Linux</h2>
+<h3><a id="What_is_Linux_16"></a>What is Linux?</h3>
+<p>Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet.<br>
+Android is powered by the Linux operating system.<br>
+An operating system a is software that manages all of the hardware resources associated with your desktop or laptop.</p>
+<h3></a>WHY DO I NEED IT?</h3>
+<ul>
+<li>High performance computing</li>
+<li>Remote access</li>
+<li>Simple interface</li>
+<li>Process automation &amp; reproducibility</li>
+</ul>
+<h3></a>What is WSL?</h3>
+<p>The Windows Subsystem for Linux (WSL) lets developers run a GNU/Linux environment directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup</p>
+<h3></a>WHY DO I NEED IT?</h3>
+<ul>
+<li>Command-line tools</li>
+<li>Utilities</li>
+<li>Applications like Git for example…</li>
+</ul>
+<h3></a>What is Git?</h3>
+<p>Git was written by <a href="images/linus.jpg">Linus Trovlads</a>(Linux Founder)<br>
+Git is a version control system (VCS)</p>
+<h5 ></a>Projects in Git are called Repositories:</h5>
+<ul>
+<li>Contains all files</li>
+<li>Including the respective edit history</li>
+<li>Each change is called a commit</li>
+<li>Linked</li>
+<li>Organized in branches (like a tree)</li>
+</ul>
+<h3>WHY DO I NEED IT?</h3>
+<p>We need Git because we’re going to store our WebSite in GitHub Pages services<br>
+GitHub Pages is a site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub and publishes the website on the web.</p>
+<h3>Confused???</h3>
+<p>Let’s try in a practical way:</p>
+<h2></a>How to install and run Windows Subsytem Linux (WSL):</h2>
+<p>First Run command prompt (cmd) as Administrator:</p>
+<p>Type the following command:</p>
+<pre><code>wsl.exe --install</code></pre>
+<p>And then type:<br>
+This command will restart your computer :)</p>
+<pre><code>shutdown /r</code></pre>
+<p>Congrats now you have Ubuntu a linux distro inside Windows<br>
+Set your user-name and password to use Ubuntu command line</p>
+<p>:: If you dont want wsl in your system just install <a href="https://git-scm.com/">git</a></li> for Windows(x64) and run Git Bash terminal </p>
+<h2></a>How to navigate in the Bash command line?</h2>
+<p>:: Where am I?<br>
+print working directory</p>
+<pre><code>$ pwd</code></pre>
+<p>:: What is in here?<br>
+list</p>
+<pre><code>$ ls</code></pre>
+<p>:: How do I move around?<br>
+call directory</p>
+<pre><code>$ cd</code></pre>
+<p>:: &lt;TAB&gt; key for auto-fill<br>
+:: Up arrow ↑ to use the previous command</p>
+<p>:: man for manual:</p>
+<pre><code>$ man ls</code></pre>
+<p>:: The mkdir command is used to create a new directory under any directory.</p>
+<pre><code>$ mkdir &lt;directory name&gt;</code></pre>
+<p>:: The touch command is used to create empty files.</p>
+<pre><code>touch &lt;file name&gt;  </code></pre>
+<p>:: The cp command is used to copy a file or directory.</p>
+<pre><code>$ cp &lt;existing file name&gt; &lt;new file name&gt;  </code></pre>
+<p>:: The mv command is used to move a file or a directory from one location to another location.</p>
+<pre><code>$ mv &lt;file name&gt; &lt;directory path&gt; </code></pre>
+<p>:: In the last but not least:</p>
+<pre><code>$ nano &lt;file name&gt;</code></pre>
+<p>to edit files…</p>
+<img src="images/unlimited.gif" alt="unlimited">
+<h2>Get started with Git</h2>
+<p>First of all go to <a href="http://GitHub.com">GitHub.com</a> and create and account<br>
+Create an empty Repository inside GitHub<br>
+Congrats now you have GitHub Repositor</p>
+<h2>Now lets "link" your PC to GitHub:</h2>
+<p><h4> PHASE-00</h4>
+:: How to configure git</p>
+<pre><code>git config --global user.name &quot;YOUR USER NAME&quot;
+git config --global user.email &quot;YOUR EMAIL&quot;</code></pre>
+<p><h4> PHASE-01</h4>
+:: How to do a first “push” to GitHub</p>
+<p>Go to the folder that contain the source code</p>
+<p>Create a git repository in your pc</p>
+<pre><code>$ git init</code></pre>
+<p><h4> PHASE-02</h4></p>
+<p>:: Add your files to git<br>
+Put your all the files in git</p>
+<pre><code>$ git add .
+$ git commit -m &quot;Example&quot;</code></pre>
+<p><h4> PHASE-03</h4></p>
+<p>:: Do a first “push” to GitHub</p>
+<pre><code>$ git remote add origin master https://github.com/___.git
+$ git push -u origin master</code></pre>
+<p >next time you “push” (upload) just type:</p>
+<pre><code>$ git pull https://github.com/___.git
+$ git push -u origin master</code></pre>
+<p>next time you “pull” (download) just type:</p>
+<pre><code>$ git pull https://github.com/___.git</code></pre>
+<p><h3>NOTE: You must be in the FOLDER_BASE  (.git) to pull or push your website correctly</h3></p>
+<p>Ok now you have the files for the website in GitHub repository right?<br>
+Just go to Pages inside your GitHub repository and get the link to your WebSite</p>
+<p>Done!!!</p>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebCreator 22 Outubro</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div class="header">
+<img src="images/weblogo.png">
+<h1>WebCreator</h1>
+</div>
+<h2>Aula 29 Outubro</h2>
+<h2>Dependencies</h2>
+<ul>
+<li>
+<a href="https://code.visualstudio.com/download">Visual Studio Code (VsCode)</a>
+</li>
+<li>Google Chorme or other web browser</li>
+</ul>
+<h2>&gt;First approach to CSS</h2>
+<h3>What is CSS?</h3>
+<p>A CSS (cascading style sheet) file allows you to separate your web sites (X)HTML content from it’s style. 
+<p>As always you use your (X)HTML file to arrange the content, but all of the presentation (fonts, colors, background, borders, text formatting, link effects &amp; so on…) are accomplished within a CSS.</p>
+<p>At this point you have some choices of how to use the CSS, either internally or externally.</p>
+<h3>Internal Stylesheet exemple</h3>
+<pre><code>&lt;head&gt;
+&lt;title&gt;&lt;title&gt;
+&lt;style type=”text/css”&gt;
+CSS Content Goes Here
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</code></pre>
+<h3>External Stylesheet exemple</h3>
+<pre><code>&lt;head&gt;
+&lt;title&gt;&lt;title&gt;
+&lt;link rel=”stylesheet” type=”text/css”href=”style.css” /&gt;
+&lt;/head&gt;
+&lt;body&gt;p
+</code></pre>
+<h3>CSS Syntax</h3>
+<p>It consists of only 3 parts.</p>
+<pre><code>selector { 
+property: value 
+}
+</code></pre>
+<p>:: The selector is the (X)HTML element that you want to style. The property is the actual property title, and the value is the style you apply to that property.</p>
+<p>Each selector can have multiple properties, and each property within that selector can have independent values.</p>
+<p>The property and value are separated with a colon and contained within curly brackets. Multiple properties are separated by a semi colon. Multiple values within a property are sperated by commas, and if an individual value contains more than one word you surround it with quotation marks. As shown below.</p>
+<pre><code>body {
+  background: #eeeeee;
+  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+}
+</code></pre>
+<p>Note: When you nest one element inside another, the nested element will inherit the properties assigned to the containing element. Unless you modify the inner elements values independently.</p>
+<h3>CSS IDs</h3>
+<p>IDs are similar to classes, except once a specific id has been declared it cannot be used again within the same (X)HTML file.</p>
+<p>The main container for this page is defined by the following.</p>
+<pre><code>&lt;div id=”container”&gt;
+Everything within my document is inside this division.
+&lt;div&gt;
+</code></pre>
+<p>I have chosen the id selector for the “container” division over a class, because I only need to use it one time within this file.</p>
+<p>Divisions &lt;div&gt;  are a block level (X)HTML element used to define sections of an (X)HTML file. A division can contain all the parts that make up your website. Including additional divisions, spans, images, text and so on.</p>
+<p>Then in my CSS file I have the following:</p>
+<pre><code>#container{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+</code></pre>
+<h3>CSS Classes:</h3>
+<p>The class selector allows you to style items within the same (X)HTML element differently. Similiar to what I mentioned in the introduction about inline styles. Except with classes the style can be overwritten by changing out stylesheets. You can use the same class selector again and again within an (X)HTML file.</p>
+<p>To put it more simply, this sentence you are reading is defined in my CSS file with the following.</p>
+<pre><code>p {
+  font-size: small;
+  color: #333333
+}
+</code></pre>
+<p>Pretty simple, but lets say that I wanted to change the word “sentence” to green bold text, while leaving the rest of the sentence untouched. I would do the following to my (X)HTML file.</p>
+<pre><code>&lt;p&gt;
+To put it more simply, this &lt;span class=”greenboldtext”&gt;sentence&lt;/span&gt; you are reading is styled in my CSS file by the following.
+&lt;/p&gt;
+</code></pre>
+<p>Spans &lt;span&gt; are very similar to divisions except they are an inline element versus a block level element. No linebreak is created when a span is declared.</p>
+<p>Then in my CSS file I would add this style selector:</p>
+<pre><code>.greenboldtext{
+  font-size: small;
+  color: #008080;
+  font-weight: bold;
+}
+</code></pre>
+<h2>CSS Text Properties</h2>
+<h5>Color</h5>
+<p>You can set the color of text with the following:</p>
+<pre><code>  color: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: color name – example:(red, black…)</p>
+<p>:: hexadecimal number – example:(#ff0000, #000000)</p>
+<p>:: RGB color code – example:(rgb(255, 0, 0), rgb(0, 0, 0))</p>
+<h5>Letter Spacing</h5>
+<p>You can adjust the space between letters in the following manner. Setting the value to 0, prevents the text from justifying. You can use negative values.</p>
+<pre><code>  letter-spacing: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: normal</p>
+<p>:: length</p>
+<h5>Text Align</h5>
+<p>You can align text with the following:</p>
+<pre><code>  text-align: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: left</p>
+<p>:: right</p>
+<p>:: center</p>
+<p>:: justify</p>
+<h5>Text Decoration</h5>
+<p>You can decorate text with the following:</p>
+<pre><code>  text-decoration: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: none</p>
+<p>:: underline</p>
+<p>:: overline</p>
+<p>:: line through</p>
+<p>:: blink</p>
+<h5>Text Indent</h5>
+<p>You can indent the first line of text in an (X)HTML element with the following:</p>
+<pre><code>  text-indent: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: length</p>
+<p>:: percentage</p>
+<h5>Text Transform</h5>
+<p>You can control the size of letters in an (X)HTML element with the following:</p>
+<pre><code>  text-transform: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: none</p>
+<p>:: capitalize</p>
+<p>:: lowercase</p>
+<p>:: uppercase</p>
+<h5>White Space</h5>
+<p>You can control the whitespace in an (X)HTML element with the following:</p>
+<pre><code>  white-space: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: normal</p>
+<p>:: pre</p>
+<p>:: nowrap</p>
+<h5>Word Spacing</h5>
+<p>You can adjust the space between words in the following manner. You can use negative values.</p>
+<pre><code>  word-spacing: value;
+</code></pre>
+<h6>Possible values are</h6>
+<p>:: normal</p>
+<p>:: length</p>
+<p>you can start from this <a href="downloads/WebCreator29Outubro.rar">example</a></p>
